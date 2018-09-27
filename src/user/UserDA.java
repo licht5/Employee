@@ -67,7 +67,7 @@ public class UserDA {
         userID=aUser.getUserID();
         password=aUser.getPassword();
         String sql="INSERT INTO userT(userID,name,password) VALUES ('"+userID+"','"+name+"','"+password+"')";
-        System.out.println(sql);
+//        System.out.println(sql);
         try {
             User c=find(userID);
             throw (new DuplicateException("the user haven exists"));

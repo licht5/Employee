@@ -13,14 +13,14 @@ public class TesterUserDA {
             UserDA.add(secondUser);
             System.out.println("加了两个用户");
         } catch (DuplicateException e) {
-            e.printStackTrace();
+            System.out.println(e);
         }
 
         try {
             UserDA.delete(secondUser);
             secondUser=UserDA.find("004");
         } catch (NotFoundException e) {
-            e.printStackTrace();
+            System.out.println(e);
         }
 
         try {
